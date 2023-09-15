@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+
+*{
+    scroll-behavior: smooth !important;
+}
+
+.swiper {
+    margin-left: unset !important;
+    margin-right: unset !important;
+    position: unset !important;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: flex;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom) !important;
+    top: unset !important;
+    left: 0;
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset,10px);
+    right: auto;
+    top: unset !important;
+    bottom: unset !important;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset,10px);
+    left: auto;
+    top: unset !important;
+    bottom: unset !important;
+}
+
+@tailwind utilities;
